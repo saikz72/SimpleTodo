@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        items = new ArrayList<>();
         btnAdd = findViewById(R.id.btnAdd);
         rvItems = findViewById(R.id.rvItems);
         edtItem = findViewById(R.id.edtItem);
