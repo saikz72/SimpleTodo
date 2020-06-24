@@ -28,12 +28,13 @@ public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.ViewHolder>{
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        //use layout inflator to inflate a view
+        //use layout inflater to inflate a view
         View todoView = LayoutInflater.from(parent.getContext()).inflate(android.R.layout.simple_list_item_1, parent, false);
         //wrap it inside a view holder and return it
         return new ViewHolder(todoView);
     }
 
+    //responsible for binding data to a particular view holder
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         //grab the item at the position
@@ -42,6 +43,7 @@ public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.ViewHolder>{
         holder.bind(item);
     }
 
+    //tells the RV how many items are in the list
     @Override
     public int getItemCount() {
         return items.size();

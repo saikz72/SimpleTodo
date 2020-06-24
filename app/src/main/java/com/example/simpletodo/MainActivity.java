@@ -20,11 +20,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-    List<String> items;
-    Button btnAdd;
-    RecyclerView rvItems;
-    EditText edtItem;
-    ItemsAdapter itemsAdapter;
+    private List<String> items;
+    private Button btnAdd;
+    private RecyclerView rvItems;
+    private EditText edtItem;
+    private ItemsAdapter itemsAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
