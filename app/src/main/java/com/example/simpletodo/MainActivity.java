@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
         loadItems();
 
+        //event when when item clicked for a long time
         ItemsAdapter.OnLongClickListener onLongClickListener = new ItemsAdapter.OnLongClickListener() {
             @Override
             public void onItemLongClicked(int position) {

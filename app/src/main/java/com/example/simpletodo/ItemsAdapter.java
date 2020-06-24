@@ -16,6 +16,7 @@ public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.ViewHolder>{
     public interface OnLongClickListener{
         void onItemLongClicked(int position);
     }
+
     List<String> items;
     OnLongClickListener longClickListener;
 
@@ -65,6 +66,7 @@ public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.ViewHolder>{
                     return true;
                 }
             });
+
         }
     }
 }
